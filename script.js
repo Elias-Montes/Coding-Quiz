@@ -2,6 +2,9 @@ var counter = 0;
 var time = 75;
 var timerInterval;
 var score = 0;
+var codeQuizEl = document.querySelector(".code-quiz");
+var questionsEl = document.querySelector("#questions");
+var startButton = document.querySelector("#start-button");
 
 var questionsAnswers = [
     {
@@ -40,3 +43,13 @@ var questionsAnswers = [
       correctAnswer: "all of the above,",
     },
   ];
+
+function startQuiz() {
+    codeQuizEl.style.display = "none";
+    questionsEl.style.display = "block";
+    startTimer();
+    displayQuestion(questionCounter);
+}
+
+startButton.addEventListener("click", startQuiz);
+  
