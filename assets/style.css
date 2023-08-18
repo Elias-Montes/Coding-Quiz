@@ -1,0 +1,107 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+  :root {
+    --button-color: teal;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 10px auto 10px;
+  }
+  .high-scores {
+    color: teal;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  .high-scores:hover {
+    background-color: var(--button-color);
+    color: wheat;
+    font-size: 20px;
+    cursor: grab;
+  }
+  
+  .timer {
+    color: teal;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    color: teal;
+    font-weight: bolder;
+  }
+  
+  button {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    cursor: grab;
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    border: 5px;
+    border-color: wheat;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: var(--button-color);
+    color: wheat;
+    font-size: 30px;
+    cursor: grab;
+  }
+  
+  .answer {
+    display: inline-block;
+    margin: 5px auto;
+    cursor: grab;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: white;
+    border: 5px;
+    border-color: wheat;
+  }
+  
+  .answer:hover {
+    color: wheat;
+    font-size: 30px;
+    cursor: grab;
+  }
+
+  body {
+    font-size: medium;
+  }
+  
+  .code-quiz {
+    margin: 100px auto auto auto;
+    max-width: 400px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #questions #current-question {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .answer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #all-done {
+    margin: 25px auto auto auto;
+    max-width: 400px;
+  }
