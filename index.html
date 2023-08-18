@@ -18,23 +18,27 @@
         <div id="intro" class="start-pg"></div>
         <h1>Coding Quiz</h1>
         <p>
-        Answer the coding questions within the time limit. Incorrect answers and will affect your time and score.
+        Answer the coding questions within the time limit. Incorrect answers will decrease your time and score.
         </p>
         <button id="start-button">Start Quiz</button>
     </section>
 
     <section id="questions" class="hide">
-        <h2 id="actual-question"></h2>
+        <h2 id="current-question"></h2>
         <div id="answer" class="answer"></div>
-      </section>
+    </section>
 
-      <section id="all-done" class="hide">
+    <section id="all-done" class="hide">
         <h2>DONE</h2>
         <p>Final Score<span id="final-score"></span></p>
         <p>Enter initials: <input type="text" id="initials"/>
           <button id="submit-button">Submit</button>
         </p>
-      </section>
+    </section>
+
+    <section>
+        <div id="feedback" class="hide feedback"></div>
+    </section>
 
       <script src="./script.js"></script>
   </body>
